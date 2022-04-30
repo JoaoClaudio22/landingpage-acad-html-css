@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Padrão */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo tela */
+
+html{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 62.5%;
+  color: white;
+}
+
+body{
+  background:linear-gradient(rgba(17,17,17,0.4), rgba(20,20,20,1)),url(/img/img5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+}
+
+/* Menu */
+
+header{
+  width: 100%;
+  height: 7vh;
+  background-color:rgba(22,22,22,0.2)
+}
+
+.menu-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.logo{
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-content .list-items{
+  display: flex;
+  font-weight: bold;
+  gap: 10px;
+  list-style: none;
+}
+
+.list-items a{
+  color: white;
+  text-decoration: none;
+  padding: 1.8rem;
+  font-weight: bold;
+  transform: 2ms ease-in;
+  position: relative;
+}
+
+.list-items a:before{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 1px;
+  background: rgb(251,255,0);
+  transition: all 1.5s ease;
+}
+
+.list-items a:hover:before{
+  width: 100%;
+}
+
+/* Main content */
+main{
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-text{
+  font-size: 2.8rem;
+  width: 850px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.second-text{
+  margin-top: 20px;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+
+.btns{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+}
+
+.btns button{
+  cursor: pointer;
+  height: 90px;
+  padding: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: white;
+  border:1px solid white;
+  border-radius: 20px;
+  background: transparent;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 1.5s ease;
+}
+
+.btns button:hover{
+  color: rgb(251,255,0);
+  border: none;
+}
+
+.btns button:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  border-radius: 20px;
+  width: 0px;
+  z-index: -1;
+  background: rgb(61,61,61,0.8);
+  transition: 1s;
+}
+
+.btns button:hover:before{
+  width: 100%;
+}
+
+
+
